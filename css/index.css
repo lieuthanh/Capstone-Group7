@@ -3,14 +3,79 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    font-size: 18px;
+html,body{
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    color: #404040;
+    line-height: 1.5;
+
 }
 
+/* HEADER  */
+.navbar .navbar-brand{
+    color: #404040;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
 
-html, body{
-    font-family: 'Jost',sans-serif;
 }
-.container{
+.CorpCarousel .carousel-inner .carousel-item img{
+    backdrop-filter: blur(15px);
+}
+.navbar .fa{
+    color: #009f4d;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+.navbar .fa::after{
+    content: "";
+}
+.navbar .logo{
+    text-transform: none;
+    display: block;
+    font-size: 14px;
+    padding-left: 46px;
+    font-weight: 600;
+    opacity: .9;
+}
+.btn_search{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #009f4d;
+    position: relative;
+    /* text-align: center; */
+    vertical-align: middle;
+}
+.fa-solid{
+    position: absolute;
     
+    
+}
+
+
+/* CAROUSEL  */
+.carousel-control-prev{
+    position: absolute;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* ABOUTUS  */
+.fa-circle-check::before{
+    content:"";
+}
+
+
+
+
+/* WORK  */
+.grids1{
+    padding: 40px 30px;
+    box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+    text-align: center;
 }

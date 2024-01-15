@@ -8,9 +8,33 @@ html,body{
     font-size: 1rem;
     color: #404040;
     line-height: 1.5;
-
 }
+.btn-primary {
+    color: #fff;
+    background-color: #00a63f;
+    border-color: #00a63f;
+}
+.btn-primary:hover{
+    background-color: #00732c;
+}
+.title-small{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #7e7d7d;
+    display: block;
+}
+.title-big{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #3f3a64;
+}
+/* .title-content{
 
+} */
 /* HEADER  */
 .navbar .navbar-brand{
     color: #404040;
@@ -27,8 +51,8 @@ html,body{
     margin-right: 5px;
     vertical-align: bottom;
 }
-.navbar .fa::after{
-    content: "";
+.fa-search:before{
+    content: "";
 }
 .navbar .logo{
     text-transform: none;
@@ -38,6 +62,33 @@ html,body{
     font-weight: 600;
     opacity: .9;
 }
+/* .slick-arrow{
+position: absolute;
+right: 25px;
+bottom: 50px;
+font-size: 0;
+background: white;
+border: 0;
+width: 50px;
+height: 50px;
+z-index: 12;
+outline: none;
+cursor: pointer;
+border-radius: 100%;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.12);
+border: 1px solid transparent;
+} */
+/* .banner-slider .slick-arrow:before{
+font: normal normal normal 14px/1 FontAwesome;
+font-size: 16px;
+text-align: center;
+line-height: 46px;
+color:#3f3a64;
+} */
+.control .fa-search {
+    color: #FFF;
+    transition: opacity 0.3s cubic-bezier(0.51, 0.46, 0.58, 1);
+}
 .btn_search{
     display:inline-block;
     width: 40px;
@@ -46,36 +97,128 @@ html,body{
     border: none;
     background-color: #009f4d;
     position: relative;
-    /* text-align: center; */
+    text-align: center;
     vertical-align: middle;
 }
-.fa-solid{
-    position: absolute;
-    
-    
+.control .btn-material{
+    line-height: 45px;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background:#009f4d;
+    outline: 0;
+    transform-origin: 50%;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
+.search-input {
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    margin-top: -40px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(40px, 0);
+    transition: all 0.3s ease-in-out;
+    width: 88%;
+}
+.fa-close:before {
+    content: "";
+}
 /* CAROUSEL  */
-.carousel-control-prev{
+/* .carousel-control-prev{
     position: absolute;
     bottom: 50px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+} */
+.banner-wrap{
+    height: auto;
+    position: relative;
+    overflow: hidden;
 }
-
 /* ABOUTUS  */
-.fa-circle-check::before{
-    content:"";
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 27px;
+    color:#7e7d7d;
+    opacity: .8;
+    font-family: 'Jost', sans-serif;
 }
-
-
+.fa-circle-check:before{
+    content:;
+}
+/* .aboutus .about_content .service-list{
+    list-style-type: disc;
+} */
+.service-list li a .fa{
+    color:#009f4d;
+    padding-right: 5px;
+    opacity: .8;
+}
+.service-list li a{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    color:#404040;
+    position: relative;
+    text-decoration: none;
+    
+}
+.service-list li{
+    list-style: none;
+}
 
 
 /* WORK  */
 .grids1{
+    
     padding: 40px 30px;
     box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
     text-align: center;
+    grid-template-columns: 1fr 1fr;
+}
+.grids1 h4 a {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 25px;
+    display: block;
+    color: #3f3a64;
+}
+.grids1 h4 a:hover{
+    color: #009f4d;
+    text-decoration: none;
+}
+/* GALLERY  */
+.hover_content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 46px 50px;
+    color: #ffffff;
+    z-index: 2;
+}
+.overlay_hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--layer);
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
 }

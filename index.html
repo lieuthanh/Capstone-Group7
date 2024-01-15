@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
+    <header id="site-header" class="fixed-top main-header nav-fixed">
        
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -35,14 +35,11 @@
                         <span class="logo">Vision to your Future</span>
                     </a>
                 </h1>
-                
-            
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#portNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-              
                 <div class="collapse navbar-collapse" id="portNavbar">
-                  <ul class="navbar-nav ml-auto">
+                  <ul class="navbar-nav mx-lg-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
                     </li>
@@ -52,35 +49,43 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">SERVICES</a>
                       </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PAGES</a>
-                    </li>
+                    
+                    <div class="dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="navbar-dropdown-menu-link-26" aria-haspopup="true" aria-expanded="true">
+                        PAGES
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link-26">
+                        <a class="dropdown-item" href="https://wp.w3layouts.com/corpvision/blog-posts/">Blog Posts</a>
+                        <a class="dropdown-item" href="https://wp.w3layouts.com/corpvision/404-page/">404 page</a>
+                        <a class="dropdown-item" href="https://wp.w3layouts.com/corpvision/single-landing-page/">Landing page</a>
+                        <a class="dropdown-item" href="https://wp.w3layouts.com/corpvision/elements-page/">Elements page</a>
+                      </div>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" href="#">CONTACT</a>
                       </li>
                   </ul>
-                  
                 </div>
                 <!-- Search  -->
                 <div class="header-search">
-                  <div class="btn_search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </div>
-                  <div class="btn_moon">
-                    <i class="fa-solid fa-moon"></i>
+                  <div class="control mr-3">
+                    <div class="btn-material">
+                    <i class="fa fa-search fa-solid fa-magnifying-glass"></i>
                   </div>
                 </div>
-
+                    <i class="fa-close fa-solid fa-moon"></i>
+                    <!-- <i class="icon-close fa fa-close material-icons"></i> -->
+                    <form action="https://wp.w3layouts.com/corpvision/" method="GET" class="search-input">
+                      <input class="input-search" name="s" placeholder="Start Typing" type="text">
+                      </form>
+                </div>
               </nav>
-    
         </div>
-
-
     </header>
-
+    <div class="header-fixed-space-height"></div>
 
     <!-- CAROUSEL  -->
-    <section class="CorpCarousel">  
+    <section class="CorpCarousel banner-wrap">  
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -96,11 +101,11 @@
             <img src="./img/b4.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+        <button class="slick-arrow carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+        <button class="slick-arrow carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </button>
@@ -110,27 +115,26 @@
 
 
     <!-- ABOUT US  -->
-    <section class="aboutus">
-      <div class="container">
+    <section class="aboutus py-5">
+      <div class="container py-lg-5 py-md-3">
         <div class="row about_content">
         <div class="col-lg-6">
-          <span>ABOUT US</span>
-          <h3>We make the best strategies for you, Enhancing your success</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus deserunt quidem magni temporibus reiciendis voluptatibus pariatur earum sed est fugit debitis, similique, aperiam modi, tempora alias facilis! Porro, illum cumque?</p>
-            <ul>
-              <li><a href="#"><span class="fa-solid fa-circle-check"></span>"UI/UX Design and Development"</a></li>
-              <li><a href="#"><span class="fa-solid fa-circle-check"></span>Branding Design and Identity</a></li>
-              <li><a href="#"><span class="fa-solid fa-circle-check"></span>Mobile App Design and Development</a></li>
+          <span class="title-small">ABOUT US</span>
+          <h3 class="title-big">We make the best strategies for you, Enhancing your success</h3>
+          <p class="mt-md-4 mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores accusamus deserunt quidem magni temporibus reiciendis voluptatibus pariatur earum sed est fugit debitis, similique, aperiam modi, tempora alias facilis! Porro, illum cumque?</p>
+            <ul class="service-list pt-lg-2 mt-4">
+              <li class="service-link"><a href="#url"><span class="fa fa-solid fa-circle-check"></span>UI/UX Design and Development</a></li>
+              <li class="service-link"><a href="#url"><span class="fa fa-solid fa-circle-check"></span>Branding Design and Identity</a></li>
+              <li class="service-link"><a href="#url"><span class="fa fa-solid fa-circle-check"></span>Mobile App Design and Development</a></li>
             </ul>
         </div>
-        
-        <div class="row col-lg-6 mt-4">
+        <div class="row col-lg-6 mt-lg-0 mt-md-5 mt-4">
           <div class="col-6">
-            <img src="./img/a.jpg" alt="" class="img-fluid">
+            <img src="./img/a.jpg" alt="" class="rounded img-fluid">
           </div>
           <div class="col-6 mt-4">
-            <img src="./img/c1.jpg" alt="" class="rounded img-fluid">
-            <img src="./img/c4.jpg" alt="" class="rounded img-fluid mt-3">
+            <img src="./img/c1.jpg" alt="" class="rounded img-fluid mb-md-3 mb-2"">
+            <img src="./img/c4.jpg" alt="" class="rounded img-fluid mt-md-3"">
           </div>
         
       </div>
@@ -140,37 +144,39 @@
     </section>
 
     <!-- WORK  -->
-    <section class="work">
-      <div class="container">
+    <section class="work py-5">
+      <div class="container py-lg-5 py-md-4 py-2">
         <div class="row work_content align-items-center">
-        <div class="col-lg-6">
-          <h5>EVERY DAY BRINGS NEW CHALLENGES</h5>
-          <h3>Creative agency focused on vision, product and people</h3>
+        <div class="col-lg-6 pr-lg-5">
+          <h5 class="title-small">EVERY DAY BRINGS NEW CHALLENGES</h5>
+          <h3 class="title-big mb-4">Creative agency focused on vision, product and people</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis accusantium iusto alias assumenda fugiat, excepturi libero officia odio dolore quasi. Magni excepturi rerum autem sequi natus eaque saepe provident iste voluptate dolorum ab, commodi libero. Voluptatem eos repellendus tempore velit!</p>
+          <a href="#about" class="btn btn-style btn-primary mt-lg-5 mt-4">
+            Discover More</a>
         </div>
-        <div class="row col-lg-6 justify-content-center">
+        <div class="row col-lg-6 mt-lg-0 mt-md-5 mt-4 justify-content-center">
           <div class="grids1 col-lg-6 col">
             <div class="icon">
               <img src="./img/icon1.png" alt="" class="img-fluid mb-4">
-              <h4><a href="#">Our Process</a></h4>
+              <h4><a href="#url">Our Process</a></h4>
             </div>
           </div>
           <div class="grids1 col-lg-6">
             <div class="icon">
               <img src="./img/icon2.png" alt="" class="img-fluid mb-4">
-              <h4><a href="#">How We Help</a></h4>
+              <h4><a href="#url">How We Help</a></h4>
             </div>
           </div>
           <div class="grids1 col-lg-6">
             <div class="icon">
               <img src="./img/icon3.png" alt="" class="img-fluid mb-4">
-              <h4><a href="#">UI/UX Design</a></h4>
+              <h4><a href="#url">UI/UX Design</a></h4>
             </div>
           </div>
           <div class="grids1 col-lg-6">
             <div class="icon">
               <img src="./img/icon4.png" alt="" class="img-fluid mb-4">
-              <h4><a href="#">Creative Ideas</a></h4>
+              <h4><a href="#url">Creative Ideas</a></h4>
             </div>
           </div>
 
@@ -183,50 +189,56 @@
     <section class="service"></section>
 
     <!-- GALLERY  -->
-    <section class="gallery">
-      <div class="container">
-        <div class="title_content">
-          <h3>OUR GALLERY</h3>
-          <h3>Successful projects we've done</h3>
+    <section class="gallery py-5">
+      <div class="container py-lg-5 py-md-4 py-2 ">
+        <div class="title-content text-center mb-5">
+          <h3 class="title-small">OUR GALLERY</h3>
+          <h3 class="title-big mx-lg-5">Successful projects we've done</h3>
         </div>
         <div class="row">
-        <div class="col-lg-4 px-lg-5 w-100">
-          <img src="./img/c1.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item">
+          <img src="./img/c1.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 1</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
         </div>
-        <div class="col-lg-4 px-lg-5 w-100">
-          <img src="./img/c2.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
+          <img src="./img/c2.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 2</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
         </div>
-        <div class="col-lg-4 px-lg-5 w-100">
-          <img src="./img/c3.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
+          <img src="./img/c3.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 3</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
         </div>
-        <div class="col-lg-4">
-          <img src="./img/c4.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <img src="./img/c4.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 4</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
         </div>
-        <div class="col-lg-4">
-          <img src="./img/c5.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <img src="./img/c5.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 5</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
         </div>
-        <div class="col-lg-4">
-          <img src="./img/c6.jpg" alt="">
+        <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <img src="./img/c6.jpg" alt="" class="card-img-bottom d-block">
+          <span class="overlay_hover"></span>
           <span class="hover_content">
             <span class="title">Project 6</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
@@ -236,19 +248,19 @@
       </div>
       <!-- COMPANY LOGOS -->
       <div class="row company_logos pt-5 mt-5 justify-content-center">
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-4">
           <img src="./img/brand1.png" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-4">
           <img src="./img/brand6.png" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-4">
           <img src="./img/brand3.png" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-4 mt-md-0 mt-4">
           <img src="./img/brand4.png" alt="" class="img-fluid">
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2 col-md-3 col-4 mt-lg-0 mt-4">
           <img src="./img/brand5.png" alt="" class="img-fluid">
         </div>
       </div>

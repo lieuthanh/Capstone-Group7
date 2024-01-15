@@ -11,7 +11,17 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+   <!-- SLICK -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+   integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+   crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+   integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+   crossorigin="anonymous" />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+   integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+   crossorigin="anonymous" />
 
     <!-- FONT  -->
     <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&amp;display=swap" rel="stylesheet">
@@ -81,9 +91,10 @@
                 </div>
               </nav>
         </div>
+        <div class="hero-overlay"></div>
     </header>
     <div class="header-fixed-space-height"></div>
-
+   
     <!-- CAROUSEL  -->
     <section class="CorpCarousel banner-wrap">  
       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
@@ -110,6 +121,7 @@
           <span class="sr-only">Next</span>
         </button>
       </div> 
+      
     </section>
 
 
@@ -189,7 +201,7 @@
     <section class="service"></section>
 
     <!-- GALLERY  -->
-    <section class="gallery py-5">
+    <section class="gallery py-5" id="gallery">
       <div class="container py-lg-5 py-md-4 py-2 ">
         <div class="title-content text-center mb-5">
           <h3 class="title-small">OUR GALLERY</h3>
@@ -197,52 +209,64 @@
         </div>
         <div class="row">
         <div class="col-lg-4 col-md-6 item">
+          <a href="./img/c1.jpg" data-fancybox="gallery" data-caption="Caption #1" data-title="Project 1" class="zoom d-block">  
           <img src="./img/c1.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 1</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 item mt-md-0 mt-4">
+          <a href="./img/c2.jpg" data-fancybox="gallery" data-caption="Caption #2" data-title="Project 2" class="zoom d-block">  
           <img src="./img/c2.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 2</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 item mt-lg-0 mt-4">
+          <a href="./img/c3.jpg" data-fancybox="gallery" data-caption="Caption #3" data-title="Project 3" class="zoom d-block">  
           <img src="./img/c3.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 3</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <a href="./img/c4.jpg" data-fancybox="gallery" data-caption="Caption #4" data-title="Project 4" class="zoom d-block">  
           <img src="./img/c4.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 4</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <a href="./img/c5.jpg" data-fancybox="gallery" data-caption="Caption #5" data-title="Project 5" class="zoom d-block">  
           <img src="./img/c5.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 5</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
         <div class="col-lg-4 col-md-6 item mt-4 pt-lg-2">
+          <a href="./img/c6.jpg" data-fancybox="gallery" data-caption="Caption #6" data-title="Project 6" class="zoom d-block">  
           <img src="./img/c6.jpg" alt="" class="card-img-bottom d-block">
-          <span class="overlay_hover"></span>
-          <span class="hover_content">
+          <span class="overlay__hover"></span>
+          <span class="hover-content">
             <span class="title">Project 6</span>
             <span class="content">Quisque ut lectus, eros et, sed commodo risus.</span>
           </span>
+          </a>
         </div>
       </div>
       </div>
@@ -274,12 +298,66 @@
 
     <footer></footer>
 
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-angle-up"></i>
+  </a>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"></script>
+
+  <!-- <script src="./js/mixitup.min.js"></script> -->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"></script>
+
+
+  <script src="./js/jquery.countup.js"></script>
+
+  <script src="./js/util.js"></script>
+  <script src="./js/backToTop.js"></script>
+
+
+  <script>
+      // SLICK
+      $('.slick-content').slick({
+          infinite: true,
+          slidesToShow: 5,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1100,
+          arrows: false,
+          dots: true,
+          prevArrow: '<button type="button" class="service-prev"><i class="fa fa-long-arrow-alt-left"></i></button>',
+          nextArrow: '<button type="button" class="service-next"><i class="fa fa-long-arrow-alt-right"></i></button>'
+      });
+
+      // MIXITUP
+      // var containerEl = document.querySelector('.showcase__list');
+      // var mixer = mixitup(containerEl);
+
+      // FANCYBOX
+      $('[data-fancybox="gallery"]').fancybox({
+          // Options will go here
+          loop: true
+      });
+
+      // COUNT UP
+      $('.counter').countUp();
+  </script>
     
 <!-- JQUERY: thư viện hỗ trợ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
 <!-- cdn bsv4 js -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
